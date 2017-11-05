@@ -73,7 +73,7 @@ function nectar_register_js() {
 		// Enqueue
 		wp_enqueue_script('jquery');
 		wp_enqueue_script('modernizer');
-		wp_enqueue_script('beefy');
+		
 
 		////only load for IE8
 		if(preg_match('/(?i)msie [2-8]/',$_SERVER['HTTP_USER_AGENT'])) {
@@ -151,7 +151,7 @@ function nectar_register_js() {
 		}
 
 
-		
+		wp_enqueue_script('beefy');
 	}
 }
 
