@@ -20,10 +20,10 @@ jQuery(document).ready(function($){
 			if($(this).height() > heightestBox) {
 				heightestBox = $(this).height();
 			}
-
+			console.log(heightestBox);
 		});
 
-		$('product-box.featured').height(heightestBox);
+		$('product-box.featured', this).height(heightestBox);
 
 	});
 
