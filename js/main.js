@@ -16,13 +16,13 @@ jQuery(document).ready(function($){
 		let heightestBox = 0;
 
 		$(this).find('.product-box', this).each(function(){
-
-			if($(this).height() > heightestBox) {
-				heightestBox = $(this).height();
-			}
+			console.log(heightestBox);
+			// if($(this).height() > heightestBox) {
+			// 	heightestBox = $(this).height();
+			// }
 			
 		});
-		console.log(heightestBox);
+		// console.log(heightestBox);
 		$('product-box.featured', this).height(heightestBox);
 
 	});
