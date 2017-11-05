@@ -8,7 +8,24 @@ jQuery(document).ready(function($){
 	.mouseout(function(){
 		// remove the class 'white' on mouseout
 		$('.product-title', this).removeClass('white');
-	})
-	// find the sinlge product box
-	// $('.product-box-s')
+	});
+
+	// keep the same height
+	$('#product-wrapper')each(function(){
+		// cache the highest element
+		let heightestBox = 0;
+
+		$('.product-box.featured', this).each(function(){
+
+			if($(this).height() > heightestBox) {
+				heightestBox = $(this).height();
+			}
+
+		});
+
+		$('product-box.featured', this).height(heightestBox);
+
+	});
+
+
 });
