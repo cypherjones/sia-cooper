@@ -59,6 +59,7 @@ function nectar_register_js() {
 		wp_register_script('midnight', $nectar_get_template_directory_uri . '/js/midnight.js', 'jquery', '1.0', TRUE);
 		wp_register_script('twentytwenty', $nectar_get_template_directory_uri . '/js/jquery.twentytwenty.js', 'jquery', '1.0', TRUE);
 		wp_register_script('stickykit', $nectar_get_template_directory_uri . '/js/stickkit.js', 'jquery', '1.0', TRUE);
+		wp_register_script('beefy', $nectar_get_template_directory_uri . '/js/main.js', 'jquery', '1.0', TRUE);
 
 		if ( floatval(get_bloginfo('version')) < "3.6" ) {
 			wp_register_script('jplayer', $nectar_get_template_directory_uri . '/js/jplayer.min.js', 'jquery', '2.1', TRUE);
@@ -72,6 +73,7 @@ function nectar_register_js() {
 		// Enqueue
 		wp_enqueue_script('jquery');
 		wp_enqueue_script('modernizer');
+		wp_enqueue_script('beefy');
 
 		////only load for IE8
 		if(preg_match('/(?i)msie [2-8]/',$_SERVER['HTTP_USER_AGENT'])) {
