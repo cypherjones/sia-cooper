@@ -23,7 +23,7 @@ jQuery(document).ready(function($){
 
 		});
 
-		$('product-box.featured', this).height(heightestBox);
+		$('product-box.featured').height(heightestBox);
 
 	});
 
