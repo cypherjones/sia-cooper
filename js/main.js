@@ -11,7 +11,7 @@ jQuery(document).ready(function($){
 	});
 
 	// keep the same height
-	$('#product-wrapper').each(function(){
+	$('#product-wrapper .product-box').each(function(){
 		// cache the highest element
 		let heightestBox = 0;
 
