@@ -24,7 +24,7 @@ jQuery(document).ready(function($){
 			
 		});
 		// console.log(heightestBox);
-		$('product-title', this).css({
+		$('.product-title', this).css({
 			'height': heightestBox,
 		});
 
