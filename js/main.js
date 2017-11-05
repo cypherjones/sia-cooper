@@ -11,11 +11,11 @@ jQuery(document).ready(function($){
 	});
 
 	// keep the same height
-	$('#product-wrapper .product-box').each(function(){
+	$('#product-wrapper').each(function(){
 		// cache the highest element
 		let heightestBox = 0;
 
-		$(this).find('.product-title', this).each(function(){
+		$(this).find('.product-box.featured .product-title', this).each(function(){
 			// heightestBox = $(this).height();
 			console.log(heightestBox);
 			if($(this).height() > heightestBox) {
