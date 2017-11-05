@@ -15,7 +15,7 @@ jQuery(document).ready(function($){
 		// cache the highest element
 		let heightestBox = 0;
 
-		$(this).find('.product-box', this).each(function(){
+		$(this).find('.product-title', this).each(function(){
 			// heightestBox = $(this).height();
 			console.log(heightestBox);
 			if($(this).height() > heightestBox) {
@@ -24,7 +24,7 @@ jQuery(document).ready(function($){
 			
 		});
 		// console.log(heightestBox);
-		$('product-box.featured', this).css('height', heightestBox);
+		$('product-title', this).css('height', heightestBox);
 
 	});
 
