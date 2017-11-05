@@ -12,18 +12,46 @@ jQuery(document).ready(function($){
 
 	// keep the same height
 	$('#product-wrapper').each(function(){
+		
 		// cache the highest element
 		let heightestBox = 0;
-
+		
+		// find each title and determine the highest
 		$(this).find('.product-box.featured .product-title', this).each(function(){
-			// heightestBox = $(this).height();
-			console.log(heightestBox);
+			
+			// make the height of all the titles the heighest
 			if($(this).height() > heightestBox) {
 				heightestBox = $(this).height();
 			}
 			
 		});
-		// console.log(heightestBox);
+
+		// make an inline css based on the
+		// heighest title element
+		$('.product-title', this).css({
+			'height': heightestBox,
+		});
+
+	});
+
+		// keep the same height
+	$('#product-wrapper-single').each(function(){
+		
+		// cache the highest element
+		let heightestBox = 0;
+		
+		// find each title and determine the highest
+		$(this).find('.product-box .product-title', this).each(function(){
+			
+			// make the height of all the titles the heighest
+			if($(this).height() > heightestBox) {
+				heightestBox = $(this).height();
+			}
+			
+		});
+
+		// make an inline css based on the
+		// heighest title element
 		$('.product-title', this).css({
 			'height': heightestBox,
 		});
