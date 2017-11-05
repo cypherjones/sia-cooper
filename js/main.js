@@ -24,7 +24,7 @@ jQuery(document).ready(function($){
 			
 		});
 		// console.log(heightestBox);
-		$('product-box.featured', this).height(heightestBox);
+		$('product-box.featured', this).css('height', heightestBox);
 
 	});
 
