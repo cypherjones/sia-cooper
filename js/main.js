@@ -18,9 +18,9 @@ jQuery(document).ready(function($){
 		$(this).find('.product-box', this).each(function(){
 			heightestBox = $(this).height();
 			console.log(heightestBox);
-			// if($(this).height() > heightestBox) {
-			// 	heightestBox = $(this).height();
-			// }
+			if($(this).height() > heightestBox) {
+				heightestBox = $(this).height();
+			}
 			
 		});
 		// console.log(heightestBox);
