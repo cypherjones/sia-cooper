@@ -64,7 +64,7 @@ jQuery(document).ready(function($){
 		let heightestBox = 0;
 		
 		// find each title and determine the highest
-		$(this).find('.post', this).each(function(){
+		$(this).find('.post-header', this).each(function(){
 			
 			// make the height of all the titles the heighest
 			if($(this).height() > heightestBox) {
@@ -75,7 +75,7 @@ jQuery(document).ready(function($){
 
 		// make an inline css based on the
 		// heighest title element
-		$('.post', this).css({
+		$('.post-header', this).css({
 			'height': heightestBox,
 		});
 
