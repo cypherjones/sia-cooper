@@ -4,12 +4,12 @@ jQuery(document).ready(function($){
 	.mouseover(function(){
 		// add the class 'white' on mouseover
 		$('.product-title', this).addClass('white');
-		$('.product-desc', this).addClass('white');
+		$('.product-desc li', this).addClass('white');
 	})
 	.mouseout(function(){
 		// remove the class 'white' on mouseout
 		$('.product-title', this).removeClass('white');
-		$('.product-desc', this).removeClass('white');
+		$('.product-desc li', this).removeClass('white');
 	});
 
 	// keep the same height
