@@ -60,7 +60,7 @@ jQuery(document).ready(function($){
 
 	});
 
-		$('#prod-recent-posts').each(function(){
+	$('#prod-recent-posts').each(function(){
 		
 		// cache the highest element
 		let heightestBox = 0;
